@@ -54,3 +54,19 @@ ul {
 .section-title .accent {
   color: var(--color-brand-dark);
 }
+
+.title {
+  color: var(--color-brand-light);
+}
+
+.accent {
+  color: var(--color-brand-light);
+}
+
+.dark-accent {
+  color: var(--color-brand-dark);
+}
+
+.data {
+  color: #a18268;
+}
