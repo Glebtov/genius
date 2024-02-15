@@ -1,3 +1,32 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2");
+}
+
 :root {
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
@@ -7,6 +36,10 @@
 
 body {
   color: var(--color-primary-dark);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 ul {
@@ -19,6 +52,7 @@ ul {
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .button:hover {
@@ -28,14 +62,19 @@ ul {
 
 .link {
   color: var(--color-primary-light);
+  text-decoration: none;
 }
 
 .link:hover {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 .hero-title {
   color: var(--color-primary-light);
+  font-weight: 900;
+  font-size: 128px;
+  line-height: 1.5;
 }
 
 .hero-title .accent {
@@ -45,10 +84,16 @@ ul {
 .advantages-list {
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 .section-title {
   color: var(--color-primary-dark);
+  font-size: 64px;
+  line-height: 1.5;
+  font-weight: 900;
 }
 
 .section-title .accent {
@@ -57,10 +102,12 @@ ul {
 
 .title {
   color: var(--color-brand-light);
+  text-transform: uppercase;
 }
 
 .accent {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 .dark-accent {
@@ -69,4 +116,38 @@ ul {
 
 .data {
   color: #a18268;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.card {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.card-name {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.white-accent {
+  color: #faf4ea;
+  text-decoration: none;
+}
+
+.contacts {
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #faf4ea;
+  font-weight: 300;
 }
