@@ -151,3 +151,7 @@ ul {
   color: #faf4ea;
   font-weight: 300;
 }
+
+address {
+  font-style: normal;
+}
