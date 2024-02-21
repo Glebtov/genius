@@ -68,6 +68,7 @@ ul {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  padding: 16px 32px;
 }
 
 .button:hover {
@@ -108,7 +109,7 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1288px;
   margin: 0 auto;
   padding: 0 24px;
 }
