@@ -83,7 +83,7 @@ ul {
 }
 
 .button:hover {
-  background-color: transparent;
+  background-color: var(--color-primary-light);
   color: var(--color-brand-dark);
 }
 
@@ -291,8 +291,26 @@ ul {
   margin-bottom: 80px;
 }
 
+/*Contact section*/
+
 .contact-title {
   margin-bottom: 16px;
+  text-align: left;
+}
+
+.container-contact {
+  display: flex;
+}
+
+.light {
+  font-weight: 400;
+}
+
+.confidence {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
 }
 
 /*Footer*/
@@ -319,4 +337,24 @@ address {
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  gap: 166px;
+}
+
+.list-container {
+  display: flex;
+  gap: 166px;
+}
+
+.social-networks {
+  display: flex;
+  gap: 22px;
 }
