@@ -59,7 +59,11 @@ p {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
+/*Button*/
 
 .button {
   color: var(--color-primary-light);
@@ -76,6 +80,8 @@ ul {
   color: var(--color-brand-dark);
 }
 
+/*Link*/
+
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
@@ -83,8 +89,30 @@ ul {
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
 }
+
+/*Header*/
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/*Hero section*/
 
 .hero-section {
   padding: 272px 0;
@@ -123,12 +151,24 @@ ul {
   overflow: hidden;
 }
 
-.advantages-list {
-  color: var(--color-primary-light);
+/*Advatages section*/
+
+.advantages-section {
   background-color: var(--color-brand-light);
+  padding: 16px 0;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.advantages-item {
   font-size: 20px;
   line-height: 1.5;
   font-weight: 300;
+  color: var(--color-primary-light);
 }
 
 .section-title {
@@ -142,14 +182,26 @@ ul {
   color: var(--color-brand-dark);
 }
 
-.title {
-  color: var(--color-brand-light);
-  text-transform: uppercase;
-}
-
 .accent {
   color: var(--color-brand-light);
   font-weight: 600;
+}
+
+/*Tradition section*/
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.tradition-content {
+  max-width: 710px;
+}
+
+.title {
+  color: var(--color-brand-light);
+  text-transform: uppercase;
 }
 
 .traditions-section {
@@ -162,6 +214,7 @@ ul {
 
 .dark-accent {
   color: var(--color-brand-dark);
+  font-weight: 600;
 }
 
 .data {
@@ -170,6 +223,12 @@ ul {
   line-height: 1.5;
   font-weight: 400;
 }
+
+.traditions-text-limited {
+  max-width: 325px;
+}
+
+/*Chefs section*/
 
 .name {
   font-weight: 600;
@@ -182,7 +241,20 @@ ul {
   margin-bottom: 80px;
 }
 
-.card {
+/*Format section*/
+
+.format-card {
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.formats-list {
+  display: flex;
+  gap: 20px;
+}
+
+.format-text {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
@@ -198,6 +270,12 @@ ul {
   margin-bottom: 80px;
 }
 
+.contact-title {
+  margin-bottom: 16px;
+}
+
+/*Footer*/
+
 .white-accent {
   color: #faf4ea;
   text-decoration: none;
@@ -209,10 +287,6 @@ ul {
   text-decoration: none;
   color: #faf4ea;
   font-weight: 300;
-}
-
-.contact-title {
-  margin-bottom: 16px;
 }
 
 address {
