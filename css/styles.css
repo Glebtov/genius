@@ -263,13 +263,11 @@ ul {
   content: "";
 }
 
-.container-chefs {
-  display: flex;
-}
-
 .chefs-block {
   display: flex;
-  gap: 30px;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .chef {
@@ -281,7 +279,17 @@ ul {
   max-width: 334px;
 }
 
+.chef-text p {
+  margin-bottom: 24px;
+}
+
 /*Format section*/
+
+.formats-container {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
 
 .format-card {
   border: 1px solid lightgray;
@@ -330,6 +338,7 @@ ul {
   justify-content: center;
   padding: 0;
   margin: 0;
+  flex-shrink: 0;
 }
 
 .carousel-arrow {
@@ -343,8 +352,13 @@ ul {
 .carousel-button:hover .carousel-arrow {
   fill: var(--color-primary-light);
 }
-/*Contact section*/
 
+.map {
+  border: none;
+  border-radius: 16px;
+}
+
+/*Contact section*/
 .contact-title {
   margin-bottom: 16px;
   text-align: left;
@@ -373,6 +387,7 @@ ul {
   background-position: center;
   background-color: var(--color-primary-dark);
   background-size: cover;
+  padding: 32px 0;
 }
 
 .white-accent {
