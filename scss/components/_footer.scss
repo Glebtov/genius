@@ -1,0 +1,78 @@
+.footer {
+  background-image: url("../images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-primary-dark);
+  background-size: cover;
+  padding: 32px 0;
+  position: relative;
+}
+
+footer::before,
+footer::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: "";
+}
+
+footer::before {
+  width: 180px;
+  height: 120px;
+  background-image: url(/images/bread.png);
+}
+
+footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url(/images/two-breads.png);
+}
+
+.white-accent {
+  color: #faf4ea;
+  text-decoration: none;
+}
+
+.contacts {
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #faf4ea;
+  font-weight: 300;
+}
+
+address {
+  font-style: normal;
+}
+
+.data {
+  color: #a18268;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  gap: 166px;
+}
+
+.list-container {
+  display: flex;
+  gap: 166px;
+}
+
+.social-networks {
+  display: flex;
+  gap: 22px;
+}
+
+.adress-icon {
+  fill: var(--color-primary-light);
+}

@@ -1,0 +1,81 @@
+.formats-container {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+
+.format-card {
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  padding: 24px;
+  height: 444px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
+  transition: transform 0.3s;
+}
+
+.format-card:hover {
+  transform: scale(1.05);
+}
+
+.formats-list {
+  display: flex;
+  gap: 20px;
+}
+
+.format-text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.card-name {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.format-title {
+  margin-bottom: 80px;
+}
+
+.basis {
+  flex-basis: calc(100% / 3);
+}
+
+.carousel-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
+}
+
+.carousel-arrow {
+  fill: var(--color-primary-dark);
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.carousel-button:hover .carousel-arrow {
+  fill: var(--color-primary-light);
+}
+
+.map {
+  border: none;
+  border-radius: 16px;
+}
